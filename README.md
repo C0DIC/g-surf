@@ -21,7 +21,7 @@ Exit:
 
 # Installation
 
-1. git clone https://github.com/Moonwalker1996/g-serf or dowload zip directly
+1. git clone https://github.com/Moonwalker1996/g-surf or dowload zip directly
 2. cd app
-3. chmod +x gserf
+3. chmod +x gsurf
 4. ./gserf or move it, where you want and click on it
