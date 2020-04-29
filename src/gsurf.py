@@ -22,25 +22,35 @@ search_place.focus()
 search_place.pack()
 
 def search_g(event):
-	search_text = search_place.get()
-	wb.open_new_tab(f'https://www.google.com/search?&q={search_text}')
+	st = search_place.get()
+	wb.open_new_tab(f'https://www.google.com/search?&q={st}')
 
 def search_y(event):
-	search_text = search_place.get()
-	wb.open_new_tab(f'https://yandex.ru/search/?&text={search_text}')
+	st = search_place.get()
+	wb.open_new_tab(f'https://yandex.ru/search/?&text={st}')
 
 def search_ddg(event):
-	search_text = search_place.get()
-	wb.open_new_tab(f'https://duckduckgo.com/?q={search_text}')
+	st = search_place.get()
+	wb.open_new_tab(f'https://duckduckgo.com/?q={st}')
 
 def search_bg(event):
-	search_text = search_place.get()
-	wb.open_new_tab(f'https://www.bing.com/search?q={search_text}')
+	st = search_place.get()
+	wb.open_new_tab(f'https://www.bing.com/search?q={st}')
+
+def search_gitb(event):
+	st = search_place.get()
+	wb.open_new_tab(f'https://github.com/search?q={st}')
+
+def search_yt(event):
+	st = search_place.get()
+	wb.open_new_tab(f'https://www.youtube.com/results?search_query={st}')
 
 gapp.bind('<Control-g>', search_g)
-gapp.bind('<Control-y>', search_y)
+gapp.bind('<Control-x>', search_y)
 gapp.bind('<Control-d>', search_ddg)
 gapp.bind('<Control-b>', search_bg)
+gapp.bind('<Control-u>', search_gitb)
+gapp.bind('<Control-t>', search_yt)
 gapp.bind('<Escape>', exit_comm)
 
 gapp.mainloop()	
