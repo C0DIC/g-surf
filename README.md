@@ -1,5 +1,5 @@
 # G-Surfing 3
-![alt text](https://github.com/Moonwalker1996/g-surf/blob/master/screenshots/banner.jpg)
+![alt text](https://github.com/Moonwalker1996/g-surf/blob/master/screenshots/banner2.jpg)
 
 Free and open source app for fast and simple search in different search services.
 
